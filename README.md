@@ -56,6 +56,14 @@ Now use the plugin to create a marker like this:
     prefix: 'fa'
   });
 
+  let latlngMarker = L.ExtraMarkers.icon({
+    icon: 'glyphicon-info-sign',
+    markerColor: '#D43019',
+    shape: 'square',
+    prefix: 'glyphicon',
+    svg: true
+  });
+
   L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
 ````
 
